@@ -1,0 +1,418 @@
+/* Dashboard */
+.dashboard-row{
+    display: flex;
+    justify-content: center; /* Aligns items horizontally (in this case, the .dashboard-img) */
+    align-items: center; /* Aligns items vertically */
+    height: 530px; /* Example: set height as needed, 100vh makes it full screen */
+    background-color: black;
+    /* border: 5px solid black; */
+    /* padding-top: 30px; */
+}
+
+.dashboard-img{
+    width: 100%;
+    /* height: 100%; */
+    /* border: 5px solid black; */
+}
+.dashboard-img img{
+  width: 100%; 
+  background-size: cover;
+}
+
+.category-table {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-table h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.addcategory {
+    margin-bottom: 30px;
+}
+
+.addcategory form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.addcategory input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.addcategory label {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addcategory label:hover {
+    background-color: #0056b3;
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img-center img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.addcategory button[type='submit'] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addcategory button[type='submit']:hover {
+    background-color: #218838;
+}
+
+#category-table2 {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#category-table2 th, #category-table2 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#category-table2 th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#category-table2 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#category-table2 tr:hover {
+    background-color: #ddd;
+}
+
+#category-table2 td img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#category-table2 td button {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#category-table2 td button#edit {
+    background-color: #007bff;
+    color: white;
+}
+
+#category-table2 td button#edit:hover {
+    background-color: #0056b3;
+}
+
+#category-table2 td button#delete {
+    background-color: #f44336;
+    color: white;
+}
+
+#category-table2 td button#delete:hover {
+    background-color: #c82333;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* add product */
+
+.productAdmin {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+}
+
+.product-table {
+    width: 100%;
+    max-width: 600px;
+}
+
+.product-table h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.addproduct {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.addproduct form {
+    display: flex;
+    flex-direction: column;
+}
+
+.selects-category {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.select-category select,
+.product-upload label {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-category select {
+    background-color: transparent;
+}
+
+.select-category select:hover,
+.product-upload label:hover {
+    background-color: #e9ecef;
+}
+
+.product-upload input[type="file"] {
+    display: none;
+}
+/* 
+.mb-3 {
+    margin-bottom: 15px;
+} */
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.product-input {
+    margin-bottom: 15px;
+}
+
+.product-input input,
+.product-input textarea,
+.product-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.product-input input:focus,
+.product-input textarea:focus,
+.product-input select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.product-input select {
+    background-color: #f5f5f5;
+}
+
+.product-input button[type='submit'] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-input button[type='submit']:hover {
+    background-color: #218838;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* managae orders */
+.manage-orders h3{
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+
+}
+#order-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders between cells */
+    table-layout: fixed;
+}
+
+#order-table th, #order-table td {
+    border: 1px solid #ddd; /* Border style for table headers and data cells */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+#order-table th {
+    background-color: #f2f2f2; /* Background color for table headers */
+    color: #333; /* Text color for table headers */
+}
+
+#order-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+}
+
+#order-table tr:hover {
+    background-color: #f2f2f2; /* Background color on hover */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* all product table */
+#all-product-table {
+    width: 100%; /* Ensure the table takes up the full width of its container */
+    table-layout: fixed; /* Fix the layout to ensure equal column widths */
+    border-collapse: collapse; /* Collapse the borders for a cleaner look */
+    margin-top: 20px; /* Optional: Add some space above the table */
+}
+
+#all-product-table th, #all-product-table td {
+    border: 1px solid #ddd; /* Add a border around each cell */
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Add padding inside cells for better readability */
+}
+
+#all-product-table th {
+    background-color: #f2f2f2; /* Light gray background for header cells */
+    font-weight: bold; /* Make the header text bold */
+}
+
+#all-product-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+#all-product-table tr:hover {
+    background-color: #ddd; /* Light gray background for hovered rows */
+}
+
+#all-product-table td {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+#all-product-table td img {
+    width: 100px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#edit, #delete {
+    display: block; /* Make links and buttons block-level elements */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline from link */
+    padding: 8px; /* Add padding */
+    background-color: #4CAF50; /* Green background for edit link */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100px; /* Fixed width for buttons and links */
+    margin: auto; /* Center-align buttons and links */
+}
+
+#delete {
+    background-color: #f44336; /* Red background for delete button */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* users */
+#user-table {
+    width: 100%; /* Ensure the table takes up the full width of its container */
+    table-layout: fixed; /* Fix the layout to ensure equal column widths */
+    border-collapse: collapse; /* Collapse the borders for a cleaner look */
+    margin-top: 20px; /* Optional: Add some space above the table */
+}
+
+#user-table th, #user-table td {
+    width: 20%; /* Since there are 5 columns, each gets 20% of the width */
+    border: 1px solid #ddd; /* Add a border around each cell */
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Add padding inside cells for better readability */
+}
+
+#user-table th {
+    background-color: #f2f2f2; /* Light gray background for header cells */
+    font-weight: bold; /* Make the header text bold */
+}
+
+#user-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+#user-table tr:hover {
+    background-color: #ddd; /* Light gray background for hovered rows */
+}
+
+#user-table td {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}

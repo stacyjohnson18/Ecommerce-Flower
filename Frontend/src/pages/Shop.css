@@ -1,0 +1,22 @@
+.container-fluid{
+    padding: 50px;
+}
+.row{
+    display: flex;
+    gap: 30px;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.flex-wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+.flex-wrap img{
+    width: 100%;
+}

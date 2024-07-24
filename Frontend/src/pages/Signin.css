@@ -1,0 +1,93 @@
+.signin {
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #text-signin {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  #text-link {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  #text-link a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  #text-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .signin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username,
+  .password {
+    margin-bottom: 15px;
+  }
+  
+  .username p,
+  .password p {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    /* background-color: #4CAF50; */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .forgot {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .forgot a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .forgot a:hover {
+    text-decoration: underline;
+  }
+  

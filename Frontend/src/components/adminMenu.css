@@ -1,0 +1,71 @@
+/* admin header */
+.adminNav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.adminNav .logo{
+    background-color: transparent !important;
+}
+
+.logo a{
+    color: #F70C9B !important;
+    text-decoration: none;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+
+  
+
+.menulist ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;    
+}
+
+.menulist ul li a{
+    color: #F70C9B;
+    text-decoration: none;
+}
+
+/* styles.scss */
+/* styles.scss */
+
+.adminMenu {
+    background-color: #F70C9B; /* Background color for the navbar */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Example font family */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .adminMenu ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center;
+  }
+  
+  .adminMenu ul li {
+    margin-right: 50px; 
+    position: relative; /* Relative positioning for pseudo-element */
+  }
+  
+  .adminMenu ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Vertical center alignment */
+    padding: 10px;
+  }
+  
+  .adminMenu ul li a:hover {
+    background-color: #5c1842; /* Background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+
+  
